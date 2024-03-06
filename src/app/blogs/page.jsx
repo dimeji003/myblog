@@ -2,7 +2,7 @@ export const techBlogPosts = [
     {
       id: 1,
       title: "Introduction to Artificial Intelligence",
-      image: "ai_intro.jpg",
+      image: "intro.jpg",
       subject: "Artificial Intelligence",
       briefText: "Exploring the fundamentals of AI and its applications.",
       categories: ["Artificial Intelligence", "Machine Learning"],
@@ -12,7 +12,7 @@ export const techBlogPosts = [
     {
       id: 2,
       title: "The Rise of Blockchain Technology",
-      image: "blockchain_rise.jpg",
+      image: "blockchain.jpg",
       subject: "Blockchain",
       briefText: "Understanding how blockchain is reshaping industries.",
       categories: ["Blockchain", "Cryptocurrency"],
@@ -22,7 +22,7 @@ export const techBlogPosts = [
     {
       id: 3,
       title: "The Future of Quantum Computing",
-      image: "quantum_future.jpg",
+      image: "quantum.jpg",
       subject: "Quantum Computing",
       briefText: "Exploring the potential of quantum computing in revolutionizing computation.",
       categories: ["Quantum Computing", "Future Tech"],
@@ -32,7 +32,7 @@ export const techBlogPosts = [
     {
       id: 4,
       title: "The Impact of 5G Technology",
-      image: "5g_impact.jpg",
+      image: "5gimpact.jpg",
       subject: "5G Technology",
       briefText: "Examining the transformative effects of 5G on various industries.",
       categories: ["5G Technology", "Telecommunications"],
@@ -42,7 +42,7 @@ export const techBlogPosts = [
     {
       id: 5,
       title: "The Evolution of Machine Learning",
-      image: "machine_learning_evolution.jpg",
+      image: "machinelearning.jpg",
       subject: "Machine Learning",
       briefText: "Tracing the history and advancements in machine learning algorithms.",
       categories: ["Machine Learning", "Artificial Intelligence"],
@@ -52,7 +52,7 @@ export const techBlogPosts = [
     {
       id: 6,
       title: "The Future of Robotics",
-      image: "future_robotics.jpg",
+      image: "futurerobotics.jpg",
       subject: "Robotics",
       briefText: "Exploring the potential of robotics in various fields such as healthcare, manufacturing, and more.",
       categories: ["Robotics", "Future Tech"],
@@ -62,7 +62,7 @@ export const techBlogPosts = [
     {
       id: 7,
       title: "The Future of Cybersecurity",
-      image: "future_cybersecurity.jpg",
+      image: "futurecybersecurity.jpg",
       subject: "Cybersecurity",
       briefText: "Exploring emerging trends and challenges in cybersecurity.",
       categories: ["Cybersecurity", "Technology Trends"],
@@ -72,7 +72,7 @@ export const techBlogPosts = [
     {
       id: 8,
       title: "Augmented Reality: Shaping the Future",
-      image: "augmented_reality_future.jpg",
+      image: "augmented.jpg",
       subject: "Augmented Reality",
       briefText: "Examining the potential of augmented reality in transforming industries and daily life.",
       categories: ["Augmented Reality", "Future Tech"],
@@ -82,7 +82,7 @@ export const techBlogPosts = [
     {
       id: 9,
       title: "The Future of Transportation Technology",
-      image: "future_transportation.jpg",
+      image: "futuretransportation.jpg",
       subject: "Transportation Technology",
       briefText: "Exploring innovations in transportation, including autonomous vehicles and hyperloop technology.",
       categories: ["Transportation Technology", "Future Tech"],
@@ -92,7 +92,7 @@ export const techBlogPosts = [
     {
       id: 10,
       title: "The Era of Quantum Cryptography",
-      image: "quantum_cryptography.jpg",
+      image: "cryptography.jpg",
       subject: "Quantum Cryptography",
       briefText: "Exploring the potential of quantum cryptography in securing data transmission.",
       categories: ["Quantum Cryptography", "Cybersecurity"],
@@ -102,7 +102,7 @@ export const techBlogPosts = [
     {
       id: 11,
       title: "The Potential of Edge Computing",
-      image: "edge_computing_potential.jpg",
+      image: "edgecomputing.jpg",
       subject: "Edge Computing",
       briefText: "Exploring the capabilities and advantages of edge computing in IoT and beyond.",
       categories: ["Edge Computing", "Internet of Things"],
@@ -112,7 +112,7 @@ export const techBlogPosts = [
     {
       id: 12,
       title: "The Role of IoT in Smart Cities",
-      image: "iot_smart_cities.jpg",
+      image: "smartcities.jpg",
       subject: "Internet of Things",
       briefText: "Examining how IoT technologies are shaping the future of urban environments.",
       categories: ["Internet of Things", "Smart Cities"],
@@ -122,7 +122,7 @@ export const techBlogPosts = [
     {
       id: 13,
       title: "The Power of Big Data Analytics",
-      image: "big_data_analytics.jpg",
+      image: "bigdata.jpg",
       subject: "Big Data",
       briefText: "Exploring the impact of big data analytics on businesses and decision-making.",
       categories: ["Big Data", "Data Analytics"],
@@ -152,7 +152,7 @@ export const techBlogPosts = [
     {
       id: 16,
       title: "The Role of AI in Healthcare",
-      image: "ai",
+      image: "ai.jpg",
       subject: "Artificial Intelligence",
       briefText: "Exploring how AI is transforming the healthcare industry.",
       categories: ["Artificial Intelligence", "Healthcare"],
