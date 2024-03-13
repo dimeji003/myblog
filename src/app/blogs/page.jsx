@@ -200,5 +200,14 @@ export const techBlogPosts = [
       longText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit libero id justo convallis, sit amet scelerisque felis finibus. Duis vehicula velit vel lacus interdum, nec accumsan justo consequat. Cras tincidunt fermentum turpis, et consectetur quam eleifend sit amet. Nullam luctus metus nec ipsum convallis, sit amet egestas arcu posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed non nisl dignissim, aliquam nunc sed, consequat risus. Sed scelerisque nisi ac nunc tempor, nec malesuada lectus tincidunt."
     }
   ];
+
+  import React from 'react'
+  
+  export default function page() {
+    return (
+      <div>page</div>
+    )
+  }
+  
   
   
