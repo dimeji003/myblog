@@ -1,0 +1,45 @@
+@media screen and (max-width: 1024px){
+
+
+}
+@media screen and (min-width: 1025px){
+    .main{
+        background-image: radial-gradient(rgba(15, 7, 7, 0.6), rgba(17, 6, 6, 0.636)), url(/futurecybersecurity.jpg);
+        height: 85vh;
+        background-size: cover;
+    }
+    .nav{
+        background-color: rgba(0, 0, 0, 0.527);
+    }
+    .category{
+        background-color: rgba(128, 128, 128, 0.304);
+    }
+    .main2{
+        background-image: radial-gradient(rgba(15, 7, 7, 0.4), rgba(17, 6, 6, 0.536)), url(/edgecomputing\ copy.jpg);
+        height: 70vh;
+        background-size: cover
+    }
+
+}
+@media screen and (max-width: 480px){
+    .main{
+        background-image: radial-gradient(rgba(15, 7, 7, 0.6), rgba(17, 6, 6, 0.636)), url(/futurecybersecurity.jpg);
+        height: 85vh;
+        background-size: cover;
+    }
+    .nav{
+        background-color: rgba(0, 0, 0, 0.527);
+    }
+    .main2{
+        background-image: radial-gradient(rgba(15, 7, 7, 0.58), rgba(17, 6, 6, 0.636)), url(/edgecomputing\ copy\ 2.jpg);
+        height: 70vh;
+        background-size: cover
+    }
+    .category{
+        background-color: rgba(128, 128, 128, 0.304);
+    }
+    .ul{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+}

@@ -2,12 +2,16 @@ import React from 'react'
 import { techBlogPosts } from '@/app/blogs/page'
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import styles from './main.module.css'
+import Subnav from './Subnav';
 
 export default function Main() {
 
-    const allblogs = techBlogPosts.slice(0, 6).map(blog=> (
+    
+
+    const allblogs = techBlogPosts.slice(0, 8).map(blog=> (
         <section key={blog.id} className='flex flex-col gap-2'>
-            <img src={`/${blog.image}`} alt="" height={100} width={100} className='h-32 w-80'/>
+            <img src={`/${blog.image}`} alt="" height={100} width={300} className=''/>
             <cite className='text-purple-900 text-sm'>{blog.date}</cite>
             <p>{blog.subject}</p>
             <p className='text-xs text-gray-500'>{blog.briefText}</p>
@@ -27,51 +31,60 @@ export default function Main() {
             <div className='flex flex-row text-[9px] gap-3'><p className='bg-green-200 text-green-900 rounded-xl p-2'>{blog.categories[0]}</p>  <p className='bg-pink-200 text-pink-900 rounded-xl p-2'>{blog.categories[1]}</p></div>
         </section>
     ))
+
+    const editorspick = techBlogPosts.slice(15, 18).map(blog =>(
+        <section key={blog.id} className='h-60 text-white pl-4 lg:w-[430px] relative rounded-lg' style={ {backgroundImage: `radial-gradient(rgba(15, 7, 7, 0.56), rgba(17, 6, 6, 0.6)), url(/${blog.image})`, backgroundSize: `cover`} }>
+            <p className={`text-[9px] font-bold text-center w-32 m-auto p-1 rounded-md uppercase absolute top-2 right-2 ${styles.category} `}>{blog.subject}</p>
+            <p className='pt-28 w-[75%] text-sm text-gray-400'>{blog.date}</p>
+            <h2 className='w-[75%] pt-3'>{blog.briefText}</h2>
+
+
+
+        </section>
+    ))
+
+    const shortnote= techBlogPosts.map(blog =>(
+        <p>{blog.longText.slice(0, 70)}....</p>
+        
+    ))
     
     
   return (
-    <div className='py-8'>
-        <h1 className='md:text-9xl text-5xl text-center border-y-2 border-black'><strong>THE BLOG</strong></h1>
+    <div>
+        <div className={` flex text-white ${styles.main}`}>
+            <div className='flex flex-col pt-7 gap-3 place-content-center lg:pl-14 pl-8 lg:w-[48%] w-[90%]'>
+            <p className={`text-[11px] font-bold text-center w-28 p-1 rounded-md uppercase ${styles.category} `}>{techBlogPosts[6].subject}</p>
+            <h1 className='lg:text-3xl text-xl'>{techBlogPosts[6].briefText}</h1>
+            <p className='text-gray-400 text-xs'>{techBlogPosts[6].date}</p>
+            <em className='text-gray-400 text-sm'>{shortnote[6]}</em>
 
+            </div>
 
-
-     <div className='py-7 w-[80%] m-auto'>
-
-         <h2 className='py-6 text-xl'>Recent blog posts</h2>
-
-          <div className='grid md:grid-cols-3 grid-cols-1 gap-20 py-4 '>
+        </div>
+        <div className='w-[80%] m-auto mt-5 py-16'>
+            <h1 className='text-2xl'>Popular Topics</h1>
+            <Subnav />
             
-            <div>{recentPosts[0]}</div>
-          
-            <div>{recentPosts[1]}</div>
-            <div>{recentPosts[2]}</div>
-            <div>{recentPosts[3]}</div>
-            <div>{recentPosts[4]}</div>
-            <div>{recentPosts[5]}</div>
-     </div>
-            
-            
-            
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 py-9 gap-9 w-[87%] md:w-[100%] m-auto '>{allblogs}</div>
+        </div>
+        <div className={` flex flex-col items-center place-content-center text-white ${styles.main2}`}>
+            <div className='w-[60%] text-center m-auto flex flex-col gap-5'>
+            <p className={`lg:text-[11px] font-bold text-center w-32 m-auto p-1 rounded-md uppercase ${styles.category} `}>{techBlogPosts[10].subject}</p>
+            <h1 className='lg:text-3xl'>{techBlogPosts[10].briefText}</h1>
+            <p className='text-gray-400'>{techBlogPosts[10].date}</p>
 
-        
-     </div>
+            </div>
 
-     <div className='w-[80%] m-auto md:pt-40'>
-        <h2 className='py-6 text-xl'>All blog posts</h2>
-        <div className='md:grid-cols-3 grid md:grid-rows-3 grid-cols-1 gap-20'>
-            {allblogs}
 
         </div>
 
-     <div className='flex md:flex-row flex-col items-center justify-between py-6'> 
-        <div className='flex flex-row gap-2 items-center'><FaLongArrowAltLeft />Previous</div>
-        <div className='flex flex-row gap-3'><button>1</button><button>2</button><button>3</button><button>4</button></div>
-        <div className='flex flex-row gap-2 items-center'>Next<FaLongArrowAltRight /></div>
-     </div>
+        <div className='w-[90%] m-auto py-32'>
+            <h1 className='text-2xl'>Editors Pick</h1>
+            <div className='flex md:flex-row flex-col gap-10 mt-8'>{editorspick}</div>
+        </div>
 
-
-     </div>
-
+        
+        
 
     </div>
   )
