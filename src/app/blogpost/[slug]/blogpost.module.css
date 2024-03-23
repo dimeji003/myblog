@@ -1,0 +1,21 @@
+@media screen and (max-width: 1024px){
+    .category{
+        background-color: rgba(128, 128, 128, 0.304);
+    }
+
+
+}
+@media screen and (min-width: 1025px){
+    
+    .category{
+        background-color: rgba(128, 128, 128, 0.304);
+    }
+    
+
+}
+@media screen and (max-width: 480px){
+   
+    .category{
+        background-color: rgba(128, 128, 128, 0.304);
+    }
+}

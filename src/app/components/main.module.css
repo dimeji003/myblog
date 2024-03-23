@@ -1,11 +1,14 @@
 @media screen and (max-width: 1024px){
+    .category{
+        background-color: rgba(128, 128, 128, 0.304);
+    }
 
 
 }
 @media screen and (min-width: 1025px){
     .main{
         background-image: radial-gradient(rgba(15, 7, 7, 0.6), rgba(17, 6, 6, 0.636)), url(/futurecybersecurity.jpg);
-        height: 85vh;
+        height: 95vh;
         background-size: cover;
     }
     .nav{
