@@ -5,6 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import styles from './main.module.css'
 import Subnav from './Subnav';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Main() {
 
@@ -13,7 +14,7 @@ export default function Main() {
     const allblogs = techBlogPosts.slice(0, 8).map(blog=> (
         <section key={blog.id} >
             <Link href={`/blogpost/${blog.title.split(' ').join('-')}`} className='flex flex-col gap-2'>
-            <img src={`/${blog.image}`} alt="" height={100} width={300} className=''/>
+            <Image src={`/${blog.image}`} alt="" height={100} width={300} className=''/>
             <cite className='text-purple-900 text-sm'>{blog.date}</cite>
             <p>{blog.subject}</p>
             <p className='text-xs text-gray-500'>{blog.briefText}</p>
@@ -25,15 +26,7 @@ export default function Main() {
         </section>
     ))
 
-    const recentPosts = techBlogPosts.slice(13, 19).map(blog => (
-        <section key={blog.id} className='flex flex-col gap-2'>
-            <img src={`/${blog.image}`} alt="" height={100} width={200}  className='h-32 w-80'/>
-            <cite className='text-purple-900 text-sm'>{blog.date}</cite>
-            <p>{blog.subject}</p>
-            <p className='text-xs text-gray-500'>{blog.briefText}</p>
-            <div className='flex flex-row text-[9px] gap-3'><p className='bg-green-200 text-green-900 rounded-xl p-2'>{blog.categories[0]}</p>  <p className='bg-pink-200 text-pink-900 rounded-xl p-2'>{blog.categories[1]}</p></div>
-        </section>
-    ))
+    
 
     const editorspick = techBlogPosts.slice(15, 18).map(blog =>(
         <section key={blog.id} className='h-60 text-white pl-4 lg:w-[430px] relative rounded-lg' style={ {backgroundImage: `radial-gradient(rgba(15, 7, 7, 0.56), rgba(17, 6, 6, 0.6)), url(/${blog.image})`, backgroundSize: `cover`} }>
@@ -49,10 +42,7 @@ export default function Main() {
         </section>
     ))
 
-    const shortnote= techBlogPosts.map(blog =>(
-        <p>{blog.longText.slice(0, 70)}....</p>
-        
-    ))
+   
     
     
   return (

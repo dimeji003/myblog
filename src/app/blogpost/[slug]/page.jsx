@@ -36,7 +36,7 @@ export default function page(props) {
             </div>
             <div className=' py-8 justify-between items-center flex flex-row text-xs lg:text-lg '>
                 <div className=' flex flex-row items-center gap-2 lg:gap-6'>
-                    <div><Image src={`/${blogInfo.image}`} height={80} width={80} className='rounded-[50%] lg:h-20 h-11 w-11' /></div>
+                    <div><Image src={`/${blogInfo.image}`} height={80} width={80} alt={blogInfo.title} className='rounded-[50%] lg:h-20 h-11 w-11' /></div>
                     <div>
                         <p>By {blogInfo.writer}</p>
                         <p className='text-gray-500'>{blogInfo.writeroccupation}</p>

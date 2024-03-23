@@ -1,10 +1,11 @@
 import React from 'react'
 import { techBlogPosts } from '@/app/blogs/page'
+import Image from 'next/image'
 
 export default function Newsletter() {
   const allblogs = techBlogPosts.slice(0, 3).map(blog=> (
     <section key={blog.id} className='flex flex-col gap-2'>
-        <img src={`/${blog.image}`} alt="" height={100} width={100} className='h-32 w-80'/>
+        <Image src={`/${blog.image}`} alt="img" height={100} width={100} className='h-32 w-80'/>
         <cite className='text-purple-900 text-sm'>{blog.date}</cite>
         <p>{blog.subject}</p>
         <p className='text-xs text-gray-500'>{blog.briefText}</p>
